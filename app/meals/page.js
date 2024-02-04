@@ -5,6 +5,11 @@ import Link from "next/link";
 import { getMeals } from '@/lib/meals';
 
 
+export const metadata = {
+    title: 'NextLevel Food',
+    description: 'Browse the delicious meals shared by our vibrant community.',
+};
+
 async function Meals(){
     const meals = await getMeals();
 
