@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { getMeal } from '@/lib/meals';
 import { notFound } from 'next/navigation';
 
-export acync function generateMetadata({ params }){
+export async function generateMetadata({ params }){
     const meal = getMeal(params.mealSlug);
     
     if(!meal){
